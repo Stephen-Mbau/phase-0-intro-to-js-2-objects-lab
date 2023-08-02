@@ -21,6 +21,7 @@ function deleteFromEmployeeByKey(employee,name) {
         return newEmployee;    
 }
 function  destructivelyDeleteFromEmployeeByKey(employee,name) {
-            delete employee.name;
-            return employee.rank ='Boss'      
+            delete employee[name];
+            return employee;
+                  
 }
